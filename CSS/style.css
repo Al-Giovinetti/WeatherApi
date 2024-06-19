@@ -1,0 +1,15 @@
+i#my-icon-collapse{
+    cursor: pointer;
+}
+
+nav#my-nav-collapse{
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    display: none;
+    position: absolute;
+}
+
+.active{
+    font-weight: 600;
+}
