@@ -57,9 +57,25 @@
             </ul>
         </nav>
     </header>
-    
-    
+    <main>
+        <section id="actualWeather" class="pt-5 pt-md-2 bg-primary pb-3">
+            <div class="container">
+                <h3>Situazione attuale</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Inserisci dove ci troviamo" id="location">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="update">Aggiorna</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="search-weather">
+
+        </section>
+    </main>
 </body>
     <!-- My script js that manages the dynamics of the header -->
     <script src="./JS/headerScript.js"></script>
+    <!-- My script Js that call and create a page with API data (actual weather) -->
+     <script src="./JS/actualWeather.js"></script>
 </html>
