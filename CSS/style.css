@@ -1,3 +1,12 @@
+/* Header style */
+header .row{
+    height: 100px;
+}
+
+header img{
+    max-height: 95px;
+}
+
 i#my-icon-collapse{
     cursor: pointer;
 }
@@ -10,6 +19,24 @@ nav#my-nav-collapse{
     position: absolute;
 }
 
+/* Sections Weather */
 .active{
     font-weight: 600;
 }
+
+section#actualWeather{
+    height: 370px;
+}
+
+section#searchWeather{
+    height: 370px;
+}
+
+@media screen and (min-width:768px) { 
+    section#actualWeather, section#searchWeather {
+        height: calc( ( 100vh - 100px ) / 2);
+    } 
+}
+
+
+
