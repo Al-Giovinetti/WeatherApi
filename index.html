@@ -69,12 +69,12 @@
                 </div>
             </div>
         </section>
-        <section id="search-weather">
+        <section id="search-weather" class="pb-4 bg-warning">
             <div class="container">
                 <h3>Guarda le previsioni di dove vuoi</h3>
                 <div class="row">
                     <div class="col-6 py-3">
-                        <div class="input-group mb-3">
+                        <div class="input-group pb-3">
                             <input type="text" class="form-control" placeholder="Cerca le previsioni di ..." id="search-location">
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="col-12 text-center p-3"> 
-                        <button class="btn btn-success w-25" type="button" id="update">Cerca</button>
+                        <button class="btn btn-success w-25" type="button" id="search">Cerca</button>
                     </div>
                 </div>
             </div>
@@ -102,5 +102,7 @@
     <!-- My script js that manages the dynamics of the header -->
     <script src="./JS/headerScript.js"></script>
     <!-- My script Js that call and create a page with API data (actual weather) -->
-     <script src="./JS/actualWeather.js"></script>
+    <script src="./JS/actualWeather.js"></script>
+    <!-- My script Js that call and create a page with API data (forcast weather) -->
+    <script src="./JS/forecastWeather.js"></script>
 </html>

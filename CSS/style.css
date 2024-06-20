@@ -19,19 +19,33 @@ nav#my-nav-collapse{
     position: absolute;
 }
 
-/* Sections Weather */
 .active{
     font-weight: 600;
 }
+
+/* Sections Weather */
+
 
 section#actualWeather{
     height: 370px;
 }
 
 @media screen and (min-width:768px) { 
-    section#actualWeather, section#searchWeather {
-        height: calc( ( 100vh - 100px ) / 2);
+    section#actualWeather,section#search-weather{
+        min-height: calc( ( 100vh - 100px ) / 2);
     } 
+}
+
+/* Section forecast */
+
+div.forecast-card{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+div.forecast-card>p{
+    font-weight: 600;
 }
 
 
