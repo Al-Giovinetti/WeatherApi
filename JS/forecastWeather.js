@@ -1,18 +1,29 @@
 $(document).ready(function(){
 
+
+    $('input#0d').attr('checked','')
+
+    $('button.btn-secondary').click(function(){
+        $('div.time-lapse-box').slideToggle(1500);
+    })
+
+
     $('button#search').click(function(){
 
         const forcastLocation = $('input#search-location').val();
 
-        getForcastWeather(forcastLocation);
+        let radioBtn = $('input[name=time-lapse]:checked').val();
+        (radioBtn == null)? radioBtn = 1 : radioBtn;
+
+        getForcastWeather(forcastLocation, radioBtn);
     })
 
     // do an HTTP request with Get method to get forcast weather data
-    function getForcastWeather(location){
+    function getForcastWeather(location, dayLaps){
         const url = 'https://api.weatherapi.com/v1/forecast.json';
         const apiKey = 'key=3e43d9d33ab64815bb793726240404';
         const forcastLocation = '&q='+ location;
-        const days = '&days='+2;
+        const days = '&days='+dayLaps;
         const field = ['&aqi=no','&alerts=no'];
 
         let fieldString = field.join('');

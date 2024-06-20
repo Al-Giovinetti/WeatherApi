@@ -70,28 +70,28 @@
             </div>
         </section>
         <section id="search-weather" class="pb-4 bg-warning">
-            <div class="container">
+            <div class="container-fluid">
                 <h3>Guarda le previsioni di dove vuoi</h3>
                 <div class="row">
-                    <div class="col-6 py-3">
+                    <div class="col-6 pb-5">
                         <div class="input-group pb-3">
                             <input type="text" class="form-control" placeholder="Cerca le previsioni di ..." id="search-location">
                         </div>
                     </div>
-                    <div class="col-6 py-3">
-                        <p class="d-inline">Le previoni andranno fino a 10 gg </p>
-                        <button type="button" class="btn btn btn-secondary ms-3">cambia lasso</button>
-                        <div class="time-lapse-box d-none">
-                            <label for="5gg" class="ps-2" > 5 giorni</label>
-                            <input type="radio" name="time-lapse" id="5gg">
-                            <label for="10gg" class="ps-2"> 10 giorni</label>
-                            <input type="radio" name="time-lapse" id="10gg">
-                            <label for="10gg" class="ps-2"> 15 giorni</label>
-                            <input type="radio" name="time-lapse" id="15gg">
+                    <div class="col-6">
+                        <p class="d-inline">Le previoni saranno solo di oggi </p>
+                        <button type="button" class="btn btn btn-secondary ms-3 mb-1">cambia lasso</button>
+                        <div class="time-lapse-box">
+                            <label for="5gg" class="ps-2" > oggi </label>
+                            <input type="radio" name="time-lapse" id="0d" value="1" >
+                            <label for="10gg" class="ps-2"> domani </label>
+                            <input type="radio" name="time-lapse" id="1d" value="2">
+                            <label for="10gg" class="ps-2"> domani l'altro</label>
+                            <input type="radio" name="time-lapse" id="2d" value="3">
                         </div>
                     </div>
                     <div class="col-12 text-center p-3"> 
-                        <button class="btn btn-success w-25" type="button" id="search">Cerca</button>
+                        <button class="btn btn-success w-25 " type="button" id="search">Cerca</button>
                     </div>
                 </div>
             </div>

@@ -31,12 +31,24 @@ section#actualWeather{
 }
 
 @media screen and (min-width:768px) { 
-    section#actualWeather,section#search-weather{
-        min-height: calc( ( 100vh - 100px ) / 2);
-    } 
+    section#actualWeather{
+        height: 230px;
+    }
+    section#search-weather{
+        min-height: calc(100vh - 100px - 230px);
+    }
+
 }
 
 /* Section forecast */
+
+div.time-lapse-box{
+    background-color: orangered;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 0;
+    display: none;
+}
 
 div.forecast-card{
     border: 1px solid black;
